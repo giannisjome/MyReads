@@ -45,7 +45,7 @@ class BooksSearch extends Component {
                 >
                 Close</Link>
                 <div className="search-books-input-wrapper">
-                {/
+                {/*
 			
                 */}
                 <input
