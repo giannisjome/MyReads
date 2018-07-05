@@ -6,7 +6,7 @@ const Book = ({books, title, shelf, onChangeShelf}) => {
     return (
         // Sort books by title
         books.sort(sortBy('title')),
-        /
+        
         <div className="library">
             <h2 className="library-title">{title}</h2>
             <div className="library-books">
