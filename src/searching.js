@@ -18,11 +18,11 @@ class BooksSearch extends Component {
         // Check the response is not empty 
             .then(response => (response && response.length) ?
                 this.setState({books_searched: response.map(book_searched => {
-                    const book = this.props.books.find(book => book.id === books_searched.id)
+                    const book = this.props.books.find(book => book.id === book_searched.id)
                     if(book) {
                         return book
                     } else {
-                        return searchBook
+                        return books_searched;
                     }
                 })
             })
